@@ -1,7 +1,11 @@
 rtmapdir = $(datadir)/MegaTunix/$(REALTIME_MAPS_DATA_DIR)
 
 rtxml_files = 	\
-		Mazda.xml \
+		Raspexi_Mazda.xml \
+		Raspexi_Nissan.xml \
+		Raspexi_Subaru.xml \
+		Raspexi_Toyota.xml \
+		Raspexi_All.xml \
 		LibreEMS.xml \
 		JimStim-2.x.xml \
 		MS1-BnG-Std.xml \
