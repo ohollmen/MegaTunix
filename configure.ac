@@ -311,6 +311,7 @@ MegaTunix32_dbg.iss
 MegaTunix64_dbg.iss
 Doxyfile
 WIN_NOTES.txt
+raspexi/Makefile
 ])
 AC_OUTPUT
 
