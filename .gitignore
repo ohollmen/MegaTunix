@@ -59,3 +59,4 @@ gitTagName.txt
 include/version.h
 contrib/rtv_2_xml
 fix_glib_megatunix
+.agignore
