@@ -100,6 +100,7 @@ dashdesigner allows also a very nice browsing of gauges via scrollable list.
   - Geometry: for needle, gauge width/height, start and sweep angles
   - Fonts for: values, text blocks
 - Typical Gauge XML LOC (lines of code): 180-250 lines (max 375)
+
 ### Dashboards
 - Example dashboards directly in /usr/local/share/MegaTunix/Dashboards/*.xml
 - User gauges ~/mtx/default/Dashboards
@@ -111,7 +112,8 @@ dashdesigner allows also a very nice browsing of gauges via scrollable list.
     - gauge XML filename (relative path with subdir and xml filename)
     - datasource property name (within firmware type), e.g. "afr1", "dcycle1", "tpsaccel" ...
   
-### Errors
+### Error during runtime
+
 DASH PROBLEM, gauge filename is UNDEFINED for a gauge!
 ** (dashdesigner:32212): CRITICAL **: mtx_gauge_face_import_xml: assertion 'filename' failed
 ERROR, gauge has no associated filename!!
@@ -120,6 +122,7 @@ ERROR:events.c:860:update_properties: assertion failed: (tmpbuf)
 Aborted (core dumped)
 
 ## Gauge Functions (in dashdesigner)
+
 parse_rtv_xml_for_dash(xmlNode *node, Rtv_Data *rtv_data)
 import_dash_xml(filename) // Pops up dialogs
 load_elements(GtkWidget *dash, xmlNode *a_node) // pass root initially recursive
@@ -142,7 +145,8 @@ Copy header files to /usr/local/include:
 
     # 
     export MEGA_TUNIX_PROJECT_ROOT=~/MegaTunix/
-    export MEGA_TUNIX_INCLUDE_DEST=/usr/local/include/
+    export MEGA_TUNIX_INCLUDE_DEST=/usr/local/include/mtx/
+    sudo mkdir $MEGA_TUNIX_INCLUDE_DEST
     cd $MEGA_TUNIX_PROJECT_ROOT
     sudo cp config.h widgets/*.h mtxmatheval/*.h include/*.h $MEGA_TUNIX_INCLUDE_DEST
     ls -al $MEGA_TUNIX_INCLUDE_DEST
@@ -152,7 +156,8 @@ Add line -I/usr/local/include/ to compilation (may be a built-in for gcc)
 ### Linking
 During linking, add the library path /usr/local/lib (-L/usr/local/lib) and required libs.
 
-Create a special shared (.so) library out of few essential files (must have load_elements(dast, root)):
+Create a special shared (.so) library out of few essential files (must have load_elements(dast, root)).
+This is experimental and does not work because of symbol resolution problems.
 
     # Already first line is sufficient as DSO may have undefined symbols
     cd $MEGA_TUNIX_PROJECT_ROOT/src
@@ -162,7 +167,7 @@ Create a special shared (.so) library out of few essential files (must have load
     # ...   `pkg-config --libs gtk+-2.0 libxml-2.0 json-glib-1.0` -lmtxgauge -lmtxcommon
     sudo cp libmtxdash.so /usr/local/lib/
 
-### Problems
+### Problems with current linking of objects and functions
 Some attractive functionality in linked into main executable. These modules should be in a separate DSO (Dynamic shared object, *.so) Examples of this (with respective solution) are:
 - src/serialio.c / src/dataio.c (All comms routines) => Compile into Communications DSO.
 - init.c, read_config(), init() (Also msave_config())
