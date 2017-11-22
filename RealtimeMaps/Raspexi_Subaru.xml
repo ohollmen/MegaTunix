@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<rtv_map>
+	<api>
+		<major>1</major>
+		<minor>7</minor>
+	</api>
+	<realtime_map>
+		<persona>Raspexi Subaru</persona>
+		<applicable_signatures>Raspexi</applicable_signatures>
+	</realtime_map>
+	<derived>
+		<dlog_gui_name>GoPro recording status (0/1)</dlog_gui_name>
+		<dlog_field_name>Rec</dlog_field_name>
+		<internal_names>Rec</internal_names>
+		<offset>0</offset>
+		<size>_U16_</size>
+		<real_lower>253.15</real_lower>
+		<real_upper>313.15</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<temp_dep>TRUE</temp_dep>
+		<precision>2</precision>
+		<tooltip>GoPro recording status (0/1)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Vehicle power (kW)</dlog_gui_name>
+		<dlog_field_name>Power</dlog_field_name>
+		<internal_names>Power</internal_names>
+		<offset>2</offset>
+		<size>_U16_</size>
+		<real_lower>253.15</real_lower>
+		<real_upper>393.15</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<temp_dep>TRUE</temp_dep>
+		<precision>2</precision>
+		<tooltip>Vehicle power (kW)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Acceleration (+100km/h)(s)</dlog_gui_name>
+		<dlog_field_name>Accel</dlog_field_name>
+		<internal_names>Accel</internal_names>
+		<offset>4</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>102.4</real_upper>
+		<fromecu_mult>0.0015625</fromecu_mult>
+		<precision>2</precision>
+		<tooltip>Acceleration (+100km/h)(s)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Acceleration (G)</dlog_gui_name>
+		<dlog_field_name>GForce</dlog_field_name>
+		<internal_names>GForce</internal_names>
+		<offset>6</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>2</real_upper>
+		<fromecu_mult>0.000030518</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Acceleration (G)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Force exerted (N)</dlog_gui_name>
+		<dlog_field_name>ForceN</dlog_field_name>
+		<internal_names>ForceN</internal_names>
+		<offset>8</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>200</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<precision>2</precision>
+		<tooltip>Force exerted (N)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Current gear number (#)</dlog_gui_name>
+		<dlog_field_name>Gear</dlog_field_name>
+		<internal_names>Gear</internal_names>
+		<offset>10</offset>
+		<size>_U16_</size>
+		<real_lower>50</real_lower>
+		<real_upper>110</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<precision>2</precision>
+		<tooltip>Current gear number (#)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Primary injector duty cycle (%)</dlog_gui_name>
+		<dlog_field_name>PrimaryInjD</dlog_field_name>
+		<internal_names>PrimaryInjD</internal_names>
+		<offset>12</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>20</real_upper>
+		<fromecu_mult>0.001</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Primary injector duty cycle (%)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>0-100km/h Timer (Sec)</dlog_gui_name>
+		<dlog_field_name>AccelTimer</dlog_field_name>
+		<internal_names>AccelTimer</internal_names>
+		<offset>14</offset>
+		<size>_U16_</size>
+		<real_lower>253.15</real_lower>
+		<real_upper>313.15</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<temp_dep>TRUE</temp_dep>
+		<precision>2</precision>
+		<tooltip>0-100km/h Timer (Sec)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Engine Speed (rpm)</dlog_gui_name>
+		<dlog_field_name>RPM</dlog_field_name>
+		<internal_names>RPM</internal_names>
+		<offset>16</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>2</real_upper>
+		<fromecu_mult>0.000030518</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Engine Speed (rpm)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Engine Load (N)</dlog_gui_name>
+		<dlog_field_name>EngLoad</dlog_field_name>
+		<internal_names>EngLoad</internal_names>
+		<offset>22</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Engine Load (N)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Mass Flow Sensor #1 (mv)</dlog_gui_name>
+		<dlog_field_name>MAF1V</dlog_field_name>
+		<internal_names>MAF1V</internal_names>
+		<offset>24</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Mass Flow Sensor #1 (mv)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Mass Flow Sensor #2 (mv)</dlog_gui_name>
+		<dlog_field_name>MAF2V</dlog_field_name>
+		<internal_names>MAF2V</internal_names>
+		<offset>26</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>8000</real_upper>
+		<fromecu_mult>0.5</fromecu_mult>
+		<precision>1</precision>
+		<tooltip>Mass Flow Sensor #2 (mv)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Throttle Sensor Voltage (mv)</dlog_gui_name>
+		<dlog_field_name>ThrottleV</dlog_field_name>
+		<internal_names>ThrottleV</internal_names>
+		<offset>28</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>1</precision>
+		<tooltip>Throttle Sensor Voltage (mv)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Primary Injector Pulse Width (mSec)</dlog_gui_name>
+		<dlog_field_name>Primaryinp</dlog_field_name>
+		<internal_names>Primaryinp</internal_names>
+		<offset>32</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>200</real_upper>
+		<fromecu_mult>0.01</fromecu_mult>
+		<precision>2</precision>
+		<tooltip>Primary Injector Pulse Width (mSec)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Fuel correction</dlog_gui_name>
+		<dlog_field_name>Fuelc</dlog_field_name>
+		<internal_names>Fuelc</internal_names>
+		<offset>34</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>128</real_upper>
+		<fromecu_mult>0.001953125</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Fuel correction</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Leading Ignition Angle (deg)</dlog_gui_name>
+		<dlog_field_name>Leadingign</dlog_field_name>
+		<internal_names>Leadingign</internal_names>
+		<offset>36</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>2</real_upper>
+		<fromecu_mult>0.000030518</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Leading Ignition Angle (deg)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Trailing Ignition Angle (deg)</dlog_gui_name>
+		<dlog_field_name>Trailingign</dlog_field_name>
+		<internal_names>Trailingign</internal_names>
+		<offset>38</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Trailing Ignition Angle (deg)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Boost Pressure (PSI)</dlog_gui_name>
+		<dlog_field_name>BoostPres</dlog_field_name>
+		<internal_names>BoostPres</internal_names>
+		<offset>48</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>52.4288</real_upper>
+		<fromecu_mult>0.0008</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Boost Pressure (PSI)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Boost Duty (%)</dlog_gui_name>
+		<dlog_field_name>BoostDuty</dlog_field_name>
+		<internal_names>BoostDuty</internal_names>
+		<offset>50</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>15</real_upper>
+		<fromecu_mult>0.0008</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Boost Duty (%)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Water Temperature (deg. C)</dlog_gui_name>
+		<dlog_field_name>Watertemp</dlog_field_name>
+		<internal_names>Watertemp</internal_names>
+		<offset>52</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>52.4288</real_upper>
+		<fromecu_mult>0.0008</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Water Temperature (deg. C)d</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Intake Air Temperature (deg C)</dlog_gui_name>
+		<dlog_field_name>Intaketemp</dlog_field_name>
+		<internal_names>Intaketemp</internal_names>
+		<offset>54</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>64</real_upper>
+		<fromecu_mult>0.02</fromecu_mult>
+		<precision>2</precision>
+		<tooltip>Intake Air Temperature (deg C)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Knocking Level</dlog_gui_name>
+		<dlog_field_name>Knock</dlog_field_name>
+		<internal_names>Knock</internal_names>
+		<offset>56</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>10</real_upper>
+		<fromecu_mult>0.0008</fromecu_mult>
+		<precision>3</precision>
+		<tooltip>Knocking Level</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Battery Voltage (V)</dlog_gui_name>
+		<dlog_field_name>BatteryV</dlog_field_name>
+		<internal_names>BatteryV</internal_names>
+		<offset>58</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Battery Voltage (V)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Vehicle Speed (Km/h)</dlog_gui_name>
+		<dlog_field_name>Speed</dlog_field_name>
+		<internal_names>Speed</internal_names>
+		<offset>60</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Vehicle Speed (Km/h)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Mass Air Flow sensor activity ratio (%)</dlog_gui_name>
+		<dlog_field_name>MAFactivity</dlog_field_name>
+		<internal_names>MAFactivity</internal_names>
+		<offset>62</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Mass Air Flow sensor activity ratio (%)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>O2 Sensor Voltage (mv)</dlog_gui_name>
+		<dlog_field_name>O2volt</dlog_field_name>
+		<internal_names>O2volt</internal_names>
+		<offset>64</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>O2 Sensor Voltage (mv)n</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>O2 Sensor #2 Voltage (mV)t</dlog_gui_name>
+		<dlog_field_name>O2volt</dlog_field_name>
+		<internal_names>O2volt</internal_names>
+		<offset>66</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>O2 Sensor #2 Voltage (mV)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Secondary Injector Pulse Width (mSec)</dlog_gui_name>
+		<dlog_field_name>Secinjpulse</dlog_field_name>
+		<internal_names>Secinjpulse</internal_names>
+		<offset>67</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Secondary Injector Pulse Width (mSec)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Suction In Air Temperature (mV)</dlog_gui_name>
+		<dlog_field_name>SuctionAirTemp</dlog_field_name>
+		<internal_names>SuctionAirTemp</internal_names>
+		<offset>68</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Suction In Air Temperature (mV)</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #1</dlog_gui_name>
+		<dlog_field_name>AUX1</dlog_field_name>
+		<internal_names>AUX1</internal_names>
+		<offset>69</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #1</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #2</dlog_gui_name>
+		<dlog_field_name>AUX2</dlog_field_name>
+		<internal_names>AUX2</internal_names>
+		<offset>70</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #2</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #3</dlog_gui_name>
+		<dlog_field_name>AUX3</dlog_field_name>
+		<internal_names>AUX3</internal_names>
+		<offset>71</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #3M</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #4</dlog_gui_name>
+		<dlog_field_name>AUX4</dlog_field_name>
+		<internal_names>AUX4</internal_names>
+		<offset>72</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #4</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #5</dlog_gui_name>
+		<dlog_field_name>AUX5</dlog_field_name>
+		<internal_names>AUX5</internal_names>
+		<offset>73</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #5</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #6</dlog_gui_name>
+		<dlog_field_name>AUX6</dlog_field_name>
+		<internal_names>AUX6</internal_names>
+		<offset>74</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>3000</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #6</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #7</dlog_gui_name>
+		<dlog_field_name>AUX7</dlog_field_name>
+		<internal_names>AUX7</internal_names>
+		<offset>76</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #7</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Analog Auxiliary Input #8</dlog_gui_name>
+		<dlog_field_name>AUX8</dlog_field_name>
+		<internal_names>AUX8</internal_names>
+		<offset>78</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Analog Auxiliary Input #8</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Result of Analog Equation #1</dlog_gui_name>
+		<dlog_field_name>Analog1</dlog_field_name>
+		<internal_names>Analog1</internal_names>
+		<offset>80</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Result of Analog Equation #1</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Result of Analog Equation #2</dlog_gui_name>
+		<dlog_field_name>Analog2</dlog_field_name>
+		<internal_names>Analog2</internal_names>
+		<offset>82</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Result of Analog Equation #2</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Result of Analog Equation #3</dlog_gui_name>
+		<dlog_field_name>Analog3</dlog_field_name>
+		<internal_names>Analog3</internal_names>
+		<offset>84</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>TResult of Analog Equation #3</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>Result of Analog Equation #4</dlog_gui_name>
+		<dlog_field_name>Analog4</dlog_field_name>
+		<internal_names>Analog4</internal_names>
+		<offset>86</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>Result of Analog Equation #4</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused1</dlog_gui_name>
+		<dlog_field_name>unused1</dlog_field_name>
+		<internal_names>unused1</internal_names>
+		<offset>88</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>unused1</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused2</dlog_gui_name>
+		<dlog_field_name>unused2</dlog_field_name>
+		<internal_names>unused2</internal_names>
+		<offset>90</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>unused2</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused3</dlog_gui_name>
+		<dlog_field_name>unused3</dlog_field_name>
+		<internal_names>unused3</internal_names>
+		<offset>92</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<precision>0</precision>
+		<tooltip>unused3</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused4</dlog_gui_name>
+		<dlog_field_name>unused4</dlog_field_name>
+		<internal_names>unused4</internal_names>
+		<offset>94</offset>
+		<size>_U16_</size>
+		<real_lower>0</real_lower>
+		<real_upper>65535</real_upper>
+		<fromecu_mult>0.125</fromecu_mult>
+		<precision>0</precision>
+		<tooltip>unused4</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused5</dlog_gui_name>
+		<dlog_field_name>unused5</dlog_field_name>
+		<internal_names>unused5</internal_names>
+		<offset>96</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>unused5</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+	<derived>
+		<dlog_gui_name>unused6</dlog_gui_name>
+		<dlog_field_name>unused6</dlog_field_name>
+		<internal_names>unused6</internal_names>
+		<offset>97</offset>
+		<size>_U08_</size>
+		<real_lower>0</real_lower>
+		<real_upper>255</real_upper>
+		<precision>0</precision>
+		<tooltip>unused6</tooltip>
+		<log_by_default>TRUE</log_by_default>
+	</derived>
+</rtv_map>
